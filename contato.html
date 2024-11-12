@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Loja do seu Arimar</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="Imagens/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <span><h1>Tijolo segurando uma sacola de compras</h1></span>
+        <h1>Loja do seu Arimar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.php">Produtos</a></li>
+                <li><a href="carrinho.php">Carrinho</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+            <form action="envio_formulario.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Assunto da mensagem">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+
+                <div class="botoes">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Loja do Arimar &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Feito por Henrique Pereira e João Victor &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Criado em 2024</p>
+    </footer>
+</body>
+</html>
